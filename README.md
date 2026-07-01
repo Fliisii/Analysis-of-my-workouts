@@ -42,25 +42,9 @@ graph TD
     C -->|Чистые данные| E[Модуль нормализации текста]
     E -->|Rule-based классификация| F[Контекстная импутация NaN]
     F --> G[(Итоговая витрина данных / Оптимизированный DF)]
-    
-📦 Стек технологий
+ ```   
+## 📦 Стек технологий
 Язык: Python 3.10+
 Библиотеки обработки данных: Pandas, NumPy
 Парсинг: Re (Regular Expressions)
 
-⚡ Быстрый запуск
-1. Установка зависимостей
-Bash
-pip install pandas numpy
-2. Использование пайплайна
-Python
-from pipeline import FitLogPipeline
-
-# Инициализация пайплайна
-pipe = FitLogPipeline(input_path="raw_logs.txt")
-
-# Запуск сквозной очистки и сборки
-cleaned_df = pipe.run_pipeline()
-
-# Данные готовы к анализу или экспорту в BI
-print(cleaned_df.head())
