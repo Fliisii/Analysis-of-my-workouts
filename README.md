@@ -47,4 +47,4 @@ graph TD
 Язык: Python 3.10+
 Библиотеки обработки данных: Pandas, NumPy
 Парсинг: Re (Regular Expressions)
-
+Дашборд: YandexDataLens
